@@ -147,7 +147,6 @@ using namespace phidgets;
 	// imshow("Edge" , cannyEdge);
 	// imshow("Edge2", cannyEdge2);
 	waitKey();
-	getchar();
     return 0;
 }
 
