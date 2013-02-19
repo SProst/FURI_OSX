@@ -64,9 +64,7 @@
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "87"
-         endingLineNumber = "87"
-         landmarkName = "Spatial::dataHandler(CPhidgetSpatial_SpatialEventDataHandle *data, int count)"
-         landmarkType = "5">
+         endingLineNumber = "87">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -77,9 +75,7 @@
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "65"
-         endingLineNumber = "65"
-         landmarkName = "Spatial::Spatial(void)"
-         landmarkType = "5">
+         endingLineNumber = "65">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"

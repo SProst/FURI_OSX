@@ -1,4 +1,6 @@
 #pragma once
+#include <windows.h>
+#include <time.h>
 #include <math.h>
 
 class Utility
