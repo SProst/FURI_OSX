@@ -22,7 +22,7 @@ using namespace phidgets;
 	if(!capture.isOpened())
 		return -1;
 
-//	Spatial spatial;
+	Spatial spatial;
 
 	Mat image, image2, cannyEdge, cannyEdge2;
 	vector<Edge> listOfEdge;
