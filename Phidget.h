@@ -17,6 +17,7 @@ public:
 	string getDeviceName();
 	string getDeviceLabel();
 	string getLibraryVersion();
+    double getAcceleration();
 	int getDeviceSerialNumber();
 	int getDeviceVersion();
 	static string getErrorDescription(int errorCode);

@@ -1,6 +1,5 @@
 #include "Edge.h"
 
-
 Edge::Edge(void)
 {
 		startEdgeRow = -1;
@@ -42,8 +41,8 @@ int Edge::getLength()
 {
 	return length;
 }
-/*
-Edge::compute(void)
+
+void Edge::compute(Mat image, Mat image2)
 {
 	Mat cannyEdge, cannyEdge2;
 	Mat greyGaussian(image.rows, image.cols, CV_8UC1);
@@ -68,7 +67,7 @@ Edge::compute(void)
 				Scalar u = cannyEdge.at<uchar>(y,x);
 				Scalar v = image.at<uchar>(y,x);
 			//	cout << u.val[0] << ", ";
-				if(u.val[0] > 0 && edge.getStartEdgeRow == -1)
+				if(u.val[0] > 0 && edge.getStartEdgeRow() == -1)
 				{
 					edge.startEdgeRow = y;
 					edge.startEdgeColumn = x;
@@ -97,15 +96,15 @@ Edge::compute(void)
 					{
 						edge.edgeSumOriginal += edge.edgeVectorOriginal[j];
 					}
-				/*	cout << "Canny Edge Sum: " << edge.edgeSumCanny << endl;
-					cout << "Original Image Greyscale Sum: " << edge.edgeSumOriginal << endl; 
-					listOfEdge.push_back(edge);
+					cout << "Canny Edge Sum: " << edge.edgeSumCanny << endl;
+					cout << "Original Image Greyscale Sum: " << edge.edgeSumOriginal << endl;
+				//	listOfEdge.push_back(edge);
 				}
 	}
 
 	for(int y = 0; y < cannyEdge2.rows; y++)
 	{
-		Edge edge = InitializeEdge();
+		Edge edge;
 
 		for(int x = 0; x < cannyEdge2.cols; x++)
 		{
@@ -141,9 +140,9 @@ Edge::compute(void)
 					{
 						edge.edgeSumOriginal += edge.edgeVectorOriginal[j];
 					}
-				/*	cout << "Canny Edge Shifted Sum: " << edge.edgeSumCanny << endl;
+					cout << "Canny Edge Shifted Sum: " << edge.edgeSumCanny << endl;
 					cout << "Original Image Shifted Greyscale Sum: " << edge.edgeSumOriginal << endl; 
-					listOfEdges2.push_back(edge);
+				//	listOfEdges2.push_back(edge);
 				}
 	}
-} */
+}

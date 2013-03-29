@@ -60,22 +60,22 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Spatial.cpp"
-         timestampString = "382925317.653152"
+         timestampString = "386224791.600598"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "87"
-         endingLineNumber = "87">
+         startingLineNumber = "94"
+         endingLineNumber = "94">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Spatial.cpp"
-         timestampString = "382925317.653152"
+         timestampString = "386224791.600598"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "65"
-         endingLineNumber = "65">
+         startingLineNumber = "72"
+         endingLineNumber = "72">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -101,6 +101,32 @@
          startingLineNumber = "18"
          endingLineNumber = "18"
          landmarkName = "Phidget::AttachHandler(CPhidgetHandle spatial, void *userptr)"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Edge.cpp"
+         timestampString = "385671375.90633"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "86"
+         endingLineNumber = "86"
+         landmarkName = "Edge::compute(Mat image, Mat image2)"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Edge.cpp"
+         timestampString = "385671573.259861"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "101"
+         endingLineNumber = "101"
+         landmarkName = "Edge::compute(Mat image, Mat image2)"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

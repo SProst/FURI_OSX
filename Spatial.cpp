@@ -14,7 +14,7 @@ Spatial::Spatial(void):
 	CPhidgetSpatial_create(&spatial_handle_);
 	Phidget::init((CPhidgetHandle) spatial_handle_);
 	Phidget::registerHandlers();
-	CPhidgetSpatial_set_OnSpatialData_Handler(spatial_handle_, SpatialDataHandler, this);
+    CPhidgetSpatial_set_OnSpatialData_Handler(spatial_handle_, SpatialDataHandler, this);
 	Phidget::open();
 
 	printf("Waiting for spatial to be attached.... \n");
@@ -29,6 +29,13 @@ void Spatial::zero()
 	// zero (calibrate) gyro
 	CPhidgetSpatial_zeroGyro(spatial_handle_);
 }
+
+    int Spatial::getAcceleration(int axis)
+    {
+        double acceleration;
+        CPhidgetSpatial_getAcceleration(spatial_handle_, axis, &acceleration);
+        return acceleration;
+    }
 
 int CCONV Spatial::SpatialDataHandler(CPhidgetSpatialHandle handle, void *userptr, CPhidgetSpatial_SpatialEventDataHandle *data, int count)
 {

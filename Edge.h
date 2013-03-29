@@ -5,6 +5,7 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/opencv.hpp>
 using namespace std;
+using namespace cv;
 
 class Edge
 {
@@ -20,7 +21,7 @@ public:
 	int getLength();
 	int getEdgeSumCanny();
 	int getEdgeSumOriginal();
-	void compute();
+	void compute(Mat image, Mat image2);
 
 	virtual ~Edge(void);
 private:

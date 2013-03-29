@@ -43,11 +43,14 @@ using namespace phidgets;
             cvNamedWindow("video");
             cv::imshow("video", image);
             
-			/*capture >> image2;
+			capture >> image2;
 			if (image2.empty())
 				break;
+            cv::cvtColor(image2,image2,CV_RGB2GRAY);
+            Canny(image2, image2, 35, 90);
+            cvNamedWindow("video frame 2");
             cv::imshow("Video Frame 2", image2);
-			cv::cvtColor(image2,image2,CV_RGB2GRAY);*/
+			
 
 			char key = (char) waitKey(5); //delay 5 milli seconds, usually long enough to display and capture input
 
@@ -57,9 +60,12 @@ using namespace phidgets;
                 case 'Q':
                 case 27: //escape key
 			printf("Closing...\n");
-                //    spatial.close();
+                    spatial.close();
                     return 0;
 				break;
+                    case 'a':
+                    case 'A':
+                    break;
                 //case 'p': //Save an image
                 //    sprintf(filename, "filename%.3d.jpg", n++);
                 //    imwrite(filename, frame);

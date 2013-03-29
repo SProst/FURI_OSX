@@ -9,11 +9,11 @@ class Spatial :
 {
 public:
 	Spatial(void);
+    int getAcceleration(int axis);
 	virtual ~Spatial(void);
 
 protected: 
 	CPhidgetSpatialHandle spatial_handle_;
-
 	void zero();
 	void setDataRate(int rate);
 
