@@ -11,6 +11,7 @@ public:
 	Spatial(void);
     int getAcceleration(int axis);
     int getDataRate(void);
+    void printData(void);
 	virtual ~Spatial(void);
 
 protected: 
@@ -21,6 +22,7 @@ protected:
 	virtual void dataHandler(CPhidgetSpatial_SpatialEventDataHandle *data, int count);
 private: 
 	static int CCONV SpatialDataHandler(CPhidgetSpatialHandle spatial, void *userptr, CPhidgetSpatial_SpatialEventDataHandle *data, int count);
+    double arr[3];
 };
 
 }

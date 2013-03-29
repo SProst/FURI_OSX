@@ -65,6 +65,7 @@ using namespace phidgets;
 				break;
                     case 'a':
                     case 'A':
+                    spatial.printData();
                     break;
                 //case 'p': //Save an image
                 //    sprintf(filename, "filename%.3d.jpg", n++);

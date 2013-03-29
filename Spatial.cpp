@@ -54,17 +54,27 @@ void Spatial::setDataRate(int rate)
         CPhidgetSpatial_getDataRate(spatial_handle_, &milliseconds);
         return milliseconds;
     }
+    
+void Spatial::printData()
+    {
+        cout << arr[0] << " " << arr[1] << " " << arr[2] << endl;
+    }
 
 void Spatial::dataHandler(CPhidgetSpatial_SpatialEventDataHandle *data, int count)
 {
-	cout << "Number of Data Packets in this event: " << count << endl;
+	// cout << "Number of Data Packets in this event: " << count << endl;
 
-	for(int i = 0; i < count; i++)
+	/*for(int i = 0; i < count; i++)
 	{
 		cout << "=== Data Set:" << i << "===" << endl;
 		cout <<"Acceleration> x: " << data[i]->acceleration[0] << " y: " << data[i]->acceleration[1] << " z: " << data[i]->acceleration[2] << endl;
 		cout << "Timestamp> seconds: " << data[i]->timestamp.seconds << "-- microseconds: " << data[i]->timestamp.microseconds << endl;
-	}
+	}*/
+    
+    for(int i = 0; i < 3; i++)
+    {
+        arr[i] = data[0]->acceleration[i];
+    }
 	
 }
 
