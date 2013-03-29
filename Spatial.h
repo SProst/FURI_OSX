@@ -10,6 +10,7 @@ class Spatial :
 public:
 	Spatial(void);
     int getAcceleration(int axis);
+    int getDataRate(void);
 	virtual ~Spatial(void);
 
 protected: 

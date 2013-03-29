@@ -48,6 +48,13 @@ void Spatial::setDataRate(int rate)
 	CPhidgetSpatial_setDataRate(spatial_handle_, rate);
 }
 
+    int Spatial::getDataRate()
+    {
+        int milliseconds;
+        CPhidgetSpatial_getDataRate(spatial_handle_, &milliseconds);
+        return milliseconds;
+    }
+
 void Spatial::dataHandler(CPhidgetSpatial_SpatialEventDataHandle *data, int count)
 {
 	cout << "Number of Data Packets in this event: " << count << endl;
